@@ -8,7 +8,7 @@ from replaybuffer import ReplayBuffer
 from ppo_continuous import PPO_continuous
 
 
-def evaluate_policy(args, env, agent, state_norm):
+def evaluate_policy(args, env, agent:PPO_continuous, state_norm):
     times = 3
     evaluate_reward = 0
     for _ in range(times):
